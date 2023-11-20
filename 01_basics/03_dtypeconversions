@@ -1,0 +1,13 @@
+let score = "56million"
+console.log(typeof score) //string
+
+let scoreInNumber = Number(score)
+console.log(typeof scoreInNumber) //number
+console.log(scoreInNumber)      // NaN
+
+/*
+"33"=> 33
+"56mill" => NaN
+true => 1
+*/
+
