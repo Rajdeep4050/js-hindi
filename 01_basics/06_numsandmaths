@@ -1,0 +1,11 @@
+const score = 100
+const marks = new Number(200)   // this specifies k this will be a number type only
+
+console.log(score)
+console.log(marks)
+
+console.log(score.toFixed(3))       
+
+const value = 560000000
+console.log(value.toLocaleString())
+console.log(value.toLocaleString('en-IN'))
