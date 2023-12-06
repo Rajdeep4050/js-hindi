@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //isme pura tree traverse karna pad rha h
+    function addName(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').append(li)
+    }
+    addName("Pythun")
+    addName("Golang")
+    addName("Rust")
+    addName("C++")
+
+    // isme pura tree traverse nai krna padta
+    //li create kiya , text node create kiya aur insert kr diya
+    function optimizedWay(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    optimizedWay("Ruby")
+
+
+    //Edit
+    const second = document.querySelector("li:nth-child(2)")
+    // second.innerHTML="PHP"
+
+    const newli=document.createElement('li')
+    newli.textContent = "PHP"
+    second.replaceWith(newli)
+
+
+    //delete
+    const last = document.querySelector("li:nth-child(6)")
+    last.remove()
+</script>
+</html>
